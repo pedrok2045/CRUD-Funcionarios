@@ -1,0 +1,20 @@
+{
+  "name": "teste-stefanini",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "deploy": "serverless deploy"
+  },
+  "keywords": [],
+  "author": "Pedro R. A. Bispo",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.1060.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
