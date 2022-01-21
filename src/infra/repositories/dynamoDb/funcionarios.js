@@ -1,9 +1,9 @@
-const dynamoDbAdapter = require('../../databases/dynamoDbImp')
+const DynamoDbAdapter = require('../../databases/DynamoDbImp')
 
-class repository extends dynamoDbAdapter {
+class Repository extends DynamoDbAdapter {
   constructor(dynamoDocumentClient){
     super('Funcionarios', dynamoDocumentClient)
   }
 }
 
-module.exports = dynamoDocumentClient => new repository(dynamoDocumentClient)
+module.exports = dynamoDocumentClient => new Repository(dynamoDocumentClient)

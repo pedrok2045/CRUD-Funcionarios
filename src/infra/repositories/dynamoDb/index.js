@@ -1,4 +1,4 @@
-const funcionariosRepository = require('./funcionarios')
+const funcionariosRepository = require('./Funcionarios')
 
 module.exports = {
   funcionarios: (dbInstance) => funcionariosRepository(dbInstance)
