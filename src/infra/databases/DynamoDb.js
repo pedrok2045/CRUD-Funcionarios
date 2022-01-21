@@ -1,7 +1,7 @@
 const Database = require('./Database')
 const uuid = require('uuid')
 
-class DynamoAdapter extends Database {
+class DynamoDB extends Database {
   constructor(tableName, dynamoDocumentClient) {
     super(tableName)
     this.dynamoDb = dynamoDocumentClient
@@ -66,4 +66,4 @@ class DynamoAdapter extends Database {
   }
 }
 
-module.exports = DynamoAdapter
+module.exports = DynamoDB
