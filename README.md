@@ -1,13 +1,13 @@
 # CRUD de funcionários na AWS Lambda usando Serverless
 
-### Desafio no qual foi necessário aprender do zero a utilizar os serviços da Amazon Web Services (AWS) e colocar uma API online utilizando tanto o serviço Lambda quanto o API Gateway, além do DynamoDb, banco de dados não relacional proprietário da Amazon.
+### Desafio no qual foi divertido aprender do zero a utilizar os serviços da Amazon Web Services (AWS) e colocar uma API online utilizando tanto o serviço Lambda quanto o API Gateway, além do DynamoDb, banco de dados não relacional proprietário da Amazon.
 <br/><br/>
 
 # Documentação:
-  * [<h2>API<h2/>](#api)
-  * [<h2>Infra<h2/>](#infra)
-  * [<h2>Handlers<h2/>](#handlers)
-  * [<h2>Serverless<h2/>](#serverless)
+  * [API](#api)
+  * [Infra](#infra)
+  * [Handlers](#handlers)
+  * [Serverless](#serverless)
 
 <br/><br/><br/>
 
@@ -15,30 +15,30 @@
 <br/>
 
 ## Buscar todos os funcionários: 
-### método: GET
+### Método: GET
+### Retorno: Lista de objetos
+### StatusCode: 200
 ### URL: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios
-### retorno: Lista de objetos
-### statusCode: 200
 <br/>
 <br/>
 
 ## Buscar funcionário por ID: 
-### método: GET
+### Método: GET
 ### URL: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios
-### urlParam: id
-### url de exemplo: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios/69fa8bf0-7a07-11ec-be7a-75d52e599e08
-### retorno: Objeto json
-### statusCode: 200
+### UrlParam: id
+### Retorno: Objeto json
+### StatusCode: 200
+### Url de exemplo: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios/69fa8bf0-7a07-11ec-be7a-75d52e599e08
 <br/>
 <br/>
 
 ## Cadastrar funcionário: 
-### método: POST
+### Método: POST
+### Formato aceito: JSON
+### Propriedades aceitas: nome, idade e cargo
+### StatusCode: 201
 ### URL: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios
-### formato aceito: JSON
-### propriedades aceitas: nome, idade e cargo
-### statusCode: 201
-### exemplo de objeto json válido: 
+### Exemplo de objeto json válido: 
 ```
   {
     "nome": "Maria da Silva",
@@ -50,15 +50,15 @@
 <br/>
 
 ## Atualizar dados do funcionário: 
-### método: PUT
+### Método: PUT
 ### URL: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios
-### urlParam: id
-### formato aceito: JSON
-### propriedades aceitas: nome, idade e cargo
-### url de exemplo: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios/69fa8bf0-7a07-11ec-be7a-75d52e599e08
-### retorno: Objeto json
-### statusCode: 200
-### exemplo de objeto json válido: 
+### UrlParam: id
+### Formato aceito: JSON
+### Propriedades aceitas: nome, idade e cargo
+### Retorno: Objeto json
+### StatusCode: 200
+### Url de exemplo: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios/69fa8bf0-7a07-11ec-be7a-75d52e599e08
+### Exemplo de objeto json válido: 
 ```
   {
     "nome": "Maria da Silva",
@@ -70,11 +70,11 @@
 <br/>
 
 ## Excluir funcionário: 
-### método: DELETE
+### Método: DELETE
 ### URL: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios
-### urlParam: id
-### url de exemplo: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios/69fa8bf0-7a07-11ec-be7a-75d52e599e08
-### statusCode: 200
+### UrlParam: id
+### StatusCode: 200
+### Url de exemplo: https://obdbt8rvy6.execute-api.sa-east-1.amazonaws.com/dev/funcionarios/69fa8bf0-7a07-11ec-be7a-75d52e599e08
 
 <br/>
 <br/><br/>
